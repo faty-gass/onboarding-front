@@ -3,10 +3,12 @@
     <h2>Liste de produits</h2>
     <div class="flex">
       <Product
-        name="Produit 1"
-        price="20 EUR"
-        description="description du produit 1"
-        img="https://cdn.quasar.dev/img/mountains.jpg"
+        v-for="(item, idx) in products"
+        :key="idx"
+        :name="item.product"
+        :description="item.desc"
+        :price="item.price"
+        :img="item.img"
       />
     </div>
   </q-page>
@@ -24,6 +26,12 @@ export default {
     return {
       productList: []
     };
+  },
+
+  computed: {
+    products() {
+      return this.$store.state.products.allProducts;
+    }
   }
 };
 </script>

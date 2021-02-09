@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import createPersistedState from "vuex-persistedstate";
 
 import products from './products'
 
@@ -20,7 +21,7 @@ export default function (/* { ssrContext } */) {
       products
       // example
     },
-
+    plugins: [createPersistedState()],
     // enable strict mode (adds overhead!)
     // for dev mode only
     strict: process.env.DEBUGGING
