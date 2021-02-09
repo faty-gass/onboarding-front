@@ -2,10 +2,10 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-btn flat dense round icon="menu" aria-label="Menu" />
-
         <q-toolbar-title>
-          Quasar App
+          <router-link to="/">
+            <p>Home</p>
+          </router-link>
         </q-toolbar-title>
       </q-toolbar>
     </q-header>

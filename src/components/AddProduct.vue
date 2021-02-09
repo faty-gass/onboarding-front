@@ -70,7 +70,7 @@ export default {
         img: this.img
       };
       console.log(newProd);
-      this.$store.commit("products/addProduct", newProd).then(this.onReset());
+      this.$store.commit("products/addProduct", newProd);
     },
 
     onReset() {
