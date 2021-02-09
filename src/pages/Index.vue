@@ -1,14 +1,16 @@
 <template>
   <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-full.svg"
-    >
+    <AddProduct />
   </q-page>
 </template>
 
 <script>
+import AddProduct from "components/AddProduct.vue";
+
 export default {
-  name: 'PageIndex'
-}
+  name: "PageIndex",
+  components: {
+    AddProduct
+  }
+};
 </script>

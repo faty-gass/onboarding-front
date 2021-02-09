@@ -18,7 +18,12 @@
         {{ caption }}
       </q-item-label>
     </q-item-section>
+          <img
+      alt="Quasar logo"
+      src="~assets/quasar-logo-full.svg"
+    >
   </q-item>
+
 </template>
 
 <script>
