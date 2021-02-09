@@ -1,17 +1,19 @@
 <template>
   <q-page class="q-ma-lg">
     <h2>Liste de produits</h2>
-    <div class="row q-gutter-xl q-mx-auto">
-      <Product
+    <div class="row ">
+      <div
+        class="col-12 col-md-4 q-pa-md"
         v-for="(item, idx) in products"
         :key="idx"
-        :name="item.product"
-        :description="item.desc"
-        :price="item.price"
-        :img="item.img"
-        class="col-12 col-md "
-        style="min-width : 25vw; max-width : 80vw"
-      />
+      >
+        <Product
+          :name="item.product"
+          :description="item.desc"
+          :price="item.price"
+          :img="item.img"
+        />
+      </div>
     </div>
   </q-page>
 </template>
